@@ -61,6 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $this->layout = "index_layout";
         return $this->render('index');
     }
 
@@ -124,5 +125,15 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    /**
+     * Displays about page.
+     *
+     * @return string
+     */
+    public function actionSignup()
+    {
+        return $this->render('signup');
     }
 }
