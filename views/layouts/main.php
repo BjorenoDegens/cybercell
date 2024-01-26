@@ -29,11 +29,11 @@ AppAsset::register($this);
     <header>
         <?php
         NavBar::begin([
-            'brandLabel' => Yii::$app->name,
-            'brandUrl' => Yii::$app->homeUrl,
-            'options' => [
-                'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top custom-font',
-            ],
+    'brandLabel' => Yii::$app->name,
+    'brandUrl' => Yii::$app->homeUrl,
+    'options' => [
+        'class' => 'navbar navbar-expand-md navbar-dark bg-purple fixed-top custom-font', // Update 'bg-purple' to the desired class for purple background
+    ],
         ]);
         $menuItems = [
             ['label' => 'Home', 'url' => ['/site/index']],

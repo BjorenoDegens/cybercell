@@ -86,3 +86,7 @@ a.desc:after {
 .form-group {
     margin-bottom: 1rem;
 }
+
+.bg-purple {
+    background-color: purple !important; /* You can change 'purple' to the shade of purple you want */
+}
