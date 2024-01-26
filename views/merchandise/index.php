@@ -17,22 +17,20 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="container mt-5">
         <h2>Webshop</h2>
 
-        <?php
-        // Loop through products
-        foreach ($products as $product) {
-            ?>
-            <div class="card" style="width: 18rem; display: inline-block; margin: 10px;">
-                <img src="../../web/img/Cronch_Pistol.png" class="card-img-top" alt="<?php echo $product['name']; ?>">
-                <div class="card-body">
-                    <h5 class="card-title"><?php echo $product['name']; ?></h5>
-                    <p class="card-text">Price: $<?php echo number_format($product['price'], 2); ?></p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+        <div class="row">
+            <?php foreach ($products as $product): ?>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="../../web/img/<?= $product['imgname']?>.png" class="card-img-top img-fluid" alt="<?= Html::encode($product['name']); ?>" style="max-height: 400px">
+                        <div class="card-body">
+                            <h5 class="card-title"><?= Html::encode($product['name']); ?></h5>
+                            <p class="card-text">Price: $<?= number_format($product['price'], 2); ?></p>
+                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <?php
-        }
-        ?>
-
+            <?php endforeach; ?>
+        </div>
     </div>
 
 </div>
