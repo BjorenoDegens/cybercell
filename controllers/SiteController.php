@@ -129,13 +129,6 @@ class SiteController extends Controller
         return $this->render('about');
     }
 
-    public function actionDownload()
-    {
-        $this->layout = "index_layout";
-        
-        return $this->render('index');
-    }
-
     /**
      * Displays about page.
      *
