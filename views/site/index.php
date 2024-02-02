@@ -22,7 +22,7 @@ use yii\helpers\Html;
             </p>
           </div>
           <div class="col-md-4">
-            <?= Html::a('Download', ['about'], ['class' => 'btn btn-secondary btn-lg d-block w-100 mb-3', 'style' => 'background-color: #8B008B; color:white; border-color:#660066; ']) ?>
+            <?= Html::a('Download', ['../web/download/installer.exe'], ['class' => 'btn btn-secondary btn-lg d-block w-100 mb-3', 'style' => 'background-color: #8B008B; color:white; border-color:#660066; ']) ?>
             <?= Html::a('Forum', ['../web/forum/index'], ['class' => 'btn btn-secondary btn-lg d-block w-100 mb-3', 'style' => 'background-color: #8B008B; color:white; border-color:#660066; ']) ?>
             <?= Html::a('Shop', ['../web/merchandise/index'], ['class' => 'btn btn-secondary btn-lg d-block w-100 mb-3', 'style' => 'background-color: #8B008B; color:white; border-color:#660066; ']) ?>
           </div>
